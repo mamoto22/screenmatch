@@ -1,15 +1,24 @@
-public class Principal {
-    public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.nome = "Tron o legado";
-        meuFilme.anoDeLancamento = 2018;
+import br.com.screenmatch.models.Filme;
 
-        meuFilme.exibeFichaTecnica();
-        meuFilme.avalia(8);
-        meuFilme.avalia(5);
-        meuFilme.avalia(10);
-        System.out.println(meuFilme.somaDasAvaliacoes);
-        System.out.println(meuFilme.totalDeAvaliacoes);
-        System.out.println(meuFilme.retornaMedia());
+public class Principal {
+
+    public static void main(String[] args) {
+        Filme meufilme =  new Filme();
+
+        meufilme.setNome("The Matrix");
+        meufilme.setAnoDeLancamento(1999);
+        meufilme.setDuracaoEmMinutos(135);
+        meufilme.setIncluidoNoPlano(true);
+
+        meufilme.exibeFichaTecnica();
+        meufilme.avalia(9);
+        meufilme.avalia(8);
+        meufilme.avalia(9);
+
+      
+        System.out.println("Média de avaliações do filme:" +meufilme.pegaMedia());
+
+        
     }
+
 }
