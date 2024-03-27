@@ -1,6 +1,6 @@
 package br.com.screenmatch.models;
 
-public class Filme {
+public class Filme extends Titulo{
     private String diretor;
 
     public String getDiretor() {
