@@ -1,3 +1,5 @@
+import br.com.screenmatch.calculo.CalculadoraDeTempo;
+import br.com.screenmatch.calculo.FiltroRecomendacao;
 import br.com.screenmatch.models.Filme;
 
 public class Principal {
@@ -18,7 +20,9 @@ public class Principal {
       
         System.out.println("Média de avaliações do filme:" +meufilme.pegaMedia());
 
-        
+        CalculadoraDeTempo calculador = new CalculadoraDeTempo();
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+
     }
 
 }
